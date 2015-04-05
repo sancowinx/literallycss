@@ -1,0 +1,306 @@
+/*
+
+ **** CONTENTS ****
+
+ * GENERAL FONTS SETTINGS - all headings,paragraphs, pre, and blockquote
+
+ * BACKGROUND AND OVERLAY - Generic Background helpers and overlay
+
+ * IMAGE BACKGROUND - Image background class
+
+ * MARGIN-PADDING UTILS - presets of margin,padding utilities class
+
+ * POSITIONING & WIDTH-HEIGHT - Positioning, Width and height helpers
+
+ * DISPLAY HELPERS - Display helpers
+
+ * BOOTSTRAP OVERRIDING - Override some default bootstrap property and value
+
+ * GENERIC DOCUMENT - html,body, header, footer,section etc.
+
+ * CUSTOM STYLING - For custom elements
+
+*/
+
+
+
+
+
+/*------------------------------------*\
+	#GENERAL FONTS SETTINGS
+\*------------------------------------*/
+
+h1 {
+	font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      36px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    300;
+	line-height:    48px;
+}
+
+h2 {
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      30px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    200;
+	line-height:    30px;
+}
+
+h3 {
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      24px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    200;
+	line-height:    24px;
+}
+
+h4 {
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      18px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    150;
+	line-height:    18px;
+}
+
+p {
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      14px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    300;
+	line-height:    24px;
+}
+
+a {
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      14px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    300;
+	line-height:    24px;
+}
+
+blockquote {
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      17px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    400;
+	line-height:    23px;
+}
+
+pre {
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      11px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    400;
+	line-height:    23px;
+}
+
+/*table*/
+
+th {
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      14px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    300;
+	line-height:    24px;
+}
+
+td {
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:      14px;
+	font-style:     normal;
+	font-variant:   normal;
+	font-weight:    300;
+	line-height:    24px;
+}
+
+
+
+
+
+/*------------------------------------*\
+	#BACKGROUND AND OVERLAY
+\*------------------------------------*/
+
+.bg-white {
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #000000;
+}
+
+.bg-black {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.bg-grey {
+	background-color: #3E3F3E;
+	color: #ffffff;
+}
+
+
+
+
+
+/*------------------------------------*\
+	#IMAGE BACKGROUND
+\*------------------------------------*/
+
+.image-bg-responsive {
+	/*no repeating, positioning top-center*/
+	background: url() no-repeat top center;		
+
+	-webkit-background-size:    cover;          /*webkit apple*/
+	-moz-background-size:       cover;          /*mozilla firefox*/
+	-o-background-size:         cover;          /*opera*/
+	background-size:            cover;
+	min-height:                 400px;
+}
+
+
+/*------------------------------------*\
+	#MARGIN-PADDING UTILS 
+\*------------------------------------*/
+
+.margin-topbottom {
+	margin-top:     15px;
+	margin-bottom:  15px;
+}
+
+.margin-leftright {
+	margin-left:    15px;
+	margin-right:   15px;
+}
+
+.padding-topbottom {
+	padding-top:     15px;
+	padding-bottom:  15px;
+}
+
+.padding-leftright {
+	padding-left:    15px;
+	padding-right:   15px;
+}
+
+/* Negative margin */
+
+.margin-minus-topbottom {
+	margin-top:     -15px;
+	margin-bottom:  -15px;
+}
+
+.margin-minus-leftright {
+	margin-left:    -15px;
+	margin-right:   -15px;
+}
+
+
+/* Zero padding/margin side (verti/hori) */
+
+.margin-zero-topbottom {
+	margin-top:     0;
+	margin-bottom:  0;
+}
+
+.margin-zero-leftright {
+	margin-left:    0;
+	margin-right:   0;
+}
+
+.padding-zero-topbottom {
+	padding-top:     0;
+	padding-bottom:  0;
+}
+
+.padding-zero-leftright {
+	padding-left:    0;
+	padding-right:   0;
+}
+
+/*Zero padding/margin all side */
+
+.padding-zero-all   {   padding:    0;  }
+.margin-zero-all    {   margin:     0;  }
+
+
+
+
+
+/*------------------------------------*\
+	#POSITIONING & WIDTH-HEIGHT
+\*------------------------------------*/
+
+.fixed          	{   position:   fixed;      }
+.relative       	{   position:   relative;   }
+.absolute       	{   position:   absolute;   }
+
+
+/* Intended to use with absolute positioning */
+
+.position-top   	{   top:    0;  }
+.position-bottom	{   bottom: 0;  }
+.position-right 	{   right:  0;  }
+.position-left  	{   left:   0;  }
+
+
+/* Inheritor for positioning nested elements */
+
+.inherit-min-height {   min-height: inherit;    }
+.inherit-min-width  {   min-width:  inherit;    }
+.inherit-height 	{	height: 	inherit;	}
+.inherit-width		{	width: 		inherit;	}
+
+.min-height-hundredper	{	min-height:	100%	}
+.min-width-hundredper	{	min-width:	100%	}
+.height-hundredper		{	height: 	100%	}
+.width-hundredper		{	width: 		100%	}
+
+
+
+
+
+/*------------------------------------*\
+	#DISPLAY HELPERS
+\*------------------------------------*/
+
+.display-inline-div	{   display:	inline-block;   }
+.display-block		{	display:	block;			}
+
+
+
+
+
+/*------------------------------------*\
+	#BOOTSTRAP OVERRIDING
+\*------------------------------------*/
+
+/* Button overriding */
+
+.btn {	border-radius: 0px;	}
+
+/* modal overriding */
+
+.modal-content {	border-radius: 0px;	}
+
+
+
+
+
+/*------------------------------------*\
+	#GENERIC DOCUMENT
+\*------------------------------------*/
+
+
+
+
+
+/*------------------------------------*\
+	#CUSTOM STYLING
+\*------------------------------------*/
