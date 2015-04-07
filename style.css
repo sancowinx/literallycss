@@ -16,7 +16,7 @@
 
  * BOOTSTRAP OVERRIDING - Override some default bootstrap property and value
 
- * GENERIC DOCUMENT - html,body, header, footer,section etc.
+ * GENERIC DOCUMENT - html, body, header, footer, section etc.
 
  * CUSTOM STYLING - For custom elements
 
@@ -262,6 +262,9 @@ td {
 .height-hundredper		{	height: 	100%	}
 .width-hundredper		{	width: 		100%	}
 
+.width-extend-fitcontatiner		{	height: 	100%	}
+.height-extend-fitcontatiner	{	width: 		100%	}
+
 
 
 
@@ -273,7 +276,8 @@ td {
 .display-inline-div	{   display:	inline-block;   }
 .display-block		{	display:	block;			}
 
-
+.hide-content-outofbound 	{	overflow: hidden;	}
+.scroll-content-outofbound	{ 	overflow: scroll;	}
 
 
 
