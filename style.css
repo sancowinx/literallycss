@@ -2,23 +2,26 @@
 
  **** CONTENTS ****
 
- * GENERAL FONTS SETTINGS - all headings,paragraphs, pre, and blockquote
+ * GENERAL FONTS SETTINGS -     all headings,paragraphs, pre, and blockquote
+								set a font to show according to the Users' Operating System.
+								(This can be overridden)
 
- * BACKGROUND AND OVERLAY - Generic Background helpers and overlay
+ * BACKGROUND AND OVERLAY -     Generic Background helpers and overlay
 
- * IMAGE BACKGROUND - Image background class
+ * IMAGE BACKGROUND -           Image background class
 
- * MARGIN-PADDING UTILS - presets of margin,padding utilities class
+ * MARGIN-PADDING UTILS -       presets of margin,padding utilities class
+								locked at 15px
 
  * POSITIONING & WIDTH-HEIGHT - Positioning, Width and height helpers
 
- * DISPLAY HELPERS - Display helpers
+ * DISPLAY HELPERS -            Display helpers
 
- * BOOTSTRAP OVERRIDING - Override some default bootstrap property and value
+ * BOOTSTRAP OVERRIDING -       Override some default bootstrap property and value
 
- * GENERIC DOCUMENT - html, body, header, footer, section etc.
+ * HTML ELEMENTS -              html, body, header, footer, section etc.
 
- * CUSTOM STYLING - For custom elements
+ * CUSTOM STYLING -             For custom elements
 
 */
 
@@ -29,6 +32,7 @@
 /*------------------------------------*\
 	#GENERAL FONTS SETTINGS
 \*------------------------------------*/
+
 
 h1 {
 	font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -62,7 +66,7 @@ h4 {
 	font-size:      18px;
 	font-style:     normal;
 	font-variant:   normal;
-	font-weight:    150;
+	font-weight:    100;
 	line-height:    18px;
 }
 
@@ -130,8 +134,9 @@ td {
 	#BACKGROUND AND OVERLAY
 \*------------------------------------*/
 
+
 .bg-white {
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: #FFFFFF;
 	color: #000000;
 }
 
@@ -153,9 +158,10 @@ td {
 	#IMAGE BACKGROUND
 \*------------------------------------*/
 
+
 .image-bg-responsive {
 	/*no repeating, positioning top-center*/
-	background: url() no-repeat top center;		
+	background: url() no-repeat top center;
 
 	-webkit-background-size:    cover;          /*webkit apple*/
 	-moz-background-size:       cover;          /*mozilla firefox*/
@@ -168,6 +174,7 @@ td {
 /*------------------------------------*\
 	#MARGIN-PADDING UTILS 
 \*------------------------------------*/
+
 
 .margin-topbottom {
 	margin-top:     15px;
@@ -202,7 +209,7 @@ td {
 }
 
 
-/* Zero padding/margin side (verti/hori) */
+/* Zero padding/margin side (vertical / horizontal) */
 
 .margin-zero-topbottom {
 	margin-top:     0;
@@ -237,6 +244,7 @@ td {
 	#POSITIONING & WIDTH-HEIGHT
 \*------------------------------------*/
 
+
 .fixed          	{   position:   fixed;      }
 .relative       	{   position:   relative;   }
 .absolute       	{   position:   absolute;   }
@@ -257,13 +265,24 @@ td {
 .inherit-height 	{	height: 	inherit;	}
 .inherit-width		{	width: 		inherit;	}
 
-.min-height-hundredper	{	min-height:	100%	}
-.min-width-hundredper	{	min-width:	100%	}
-.height-hundredper		{	height: 	100%	}
-.width-hundredper		{	width: 		100%	}
+.min-height-100percent	{	min-height:	100%	}
+.min-width-100percent	{	min-width:	100%	}
+.height-100percent		{	height: 	100%	}
+.width-100percent		{	width: 		100%	}
+
+
+/* basically same as 100percent but to be easier to read*/
 
 .width-extend-fitcontatiner		{	height: 	100%	}
 .height-extend-fitcontatiner	{	width: 		100%	}
+
+
+/* float elements */
+
+.float-left     {   float: left;    }
+.float-right    {   float: right;   }
+.float-none     {   float: none;    }
+.float-inherit  {   float: inherit; }
 
 
 
@@ -273,17 +292,23 @@ td {
 	#DISPLAY HELPERS
 \*------------------------------------*/
 
+
 .display-inline-div	{   display:	inline-block;   }
 .display-block		{	display:	block;			}
 
 .hide-content-outofbound 	{	overflow: hidden;	}
 .scroll-content-outofbound	{ 	overflow: scroll;	}
 
+.hide-element   {   visibility: hidden;             }
+
+
+
 
 
 /*------------------------------------*\
 	#BOOTSTRAP OVERRIDING
 \*------------------------------------*/
+
 
 /* Button overriding */
 
@@ -298,10 +323,13 @@ td {
 
 
 /*------------------------------------*\
-	#GENERIC DOCUMENT
+	#HTML ELEMENTS
 \*------------------------------------*/
 
-
+/* list (ul,li)*/
+.list-no-bullets{
+	list-style-type: none;
+}
 
 
 
