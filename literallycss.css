@@ -1,9 +1,12 @@
 /*
-
+ 
+ Github Project page: https://github.com/sancowinx/literallycss
+	
  **** CONTENTS ****
 
  * GENERAL FONTS SETTINGS -     all headings,paragraphs, pre, and blockquote
 								set a font to show according to the Users' Operating System.
+								e.g. if OS X => Helvetica Neue, if Windows => Segoe UI
 								(This can be overridden)
 
  * BACKGROUND AND OVERLAY -     Generic Background helpers and overlay
@@ -13,9 +16,13 @@
  * MARGIN-PADDING UTILS -       presets of margin,padding utilities class
 								locked at 15px
 
+ * BORDER -						All border setting					
+
  * POSITIONING & WIDTH-HEIGHT - Positioning, Width and height helpers
 
- * DISPLAY HELPERS -            Display helpers
+ * TEXT ALIGNMENT -				Text alignment:; left, right, center, justify, inherit
+
+ * DISPLAY HELPERS -            Including display type, visibility, and overflow
 
  * BOOTSTRAP OVERRIDING -       Override some default bootstrap property and value
 
@@ -29,9 +36,9 @@
 
 
 
-/*------------------------------------*\
+/*====================================*\
 	#GENERAL FONTS SETTINGS
-\*------------------------------------*/
+\*====================================*/
 
 
 h1 {
@@ -130,33 +137,62 @@ td {
 
 
 
-/*------------------------------------*\
+/*====================================*\
 	#BACKGROUND AND OVERLAY
-\*------------------------------------*/
+\*====================================*/
 
 
 .bg-white {
-	background-color: #FFFFFF;
+	background: #FFFFFF;
 	color: #000000;
 }
 
 .bg-black {
-	background-color: #000000;
+	background: #000000;
 	color: #ffffff;
 }
 
 .bg-grey {
-	background-color: #3E3F3E;
+	background: #3E3F3E;
 	color: #ffffff;
+}
+
+.bg-red {
+	background: #FF0000;
+	color: #00CC00;
+}
+
+.bg-blue {
+	background: #0000FF;
+	color: #FFBF00;
+}
+
+.bg-green {
+	background: #00CC00;
+	color: #FF0000;
+}
+
+.bg-yellow {
+	background: #FFBF00;
+	color: #0000FF;
+}
+
+.bg-cyan {
+	background:	#00FFFF; 
+	color:	#FF7400;
+}
+
+.bg-purple {
+	background:	#800080; 
+	color:	#9DBE00;
 }
 
 
 
 
-
-/*------------------------------------*\
+/*====================================*\
 	#IMAGE BACKGROUND
-\*------------------------------------*/
+\*====================================*/
 
 
 .image-bg-responsive {
@@ -171,9 +207,9 @@ td {
 }
 
 
-/*------------------------------------*\
+/*====================================*\
 	#MARGIN-PADDING UTILS 
-\*------------------------------------*/
+\*====================================*/
 
 
 .margin-topbottom {
@@ -211,38 +247,56 @@ td {
 
 /* Zero padding/margin side (vertical / horizontal) */
 
-.margin-zero-topbottom {
+.no-margin-topbottom {
 	margin-top:     0;
 	margin-bottom:  0;
 }
 
-.margin-zero-leftright {
+.no-margin-leftright {
 	margin-left:    0;
 	margin-right:   0;
 }
 
-.padding-zero-topbottom {
+.no-padding-topbottom {
 	padding-top:     0;
 	padding-bottom:  0;
 }
 
-.padding-zero-leftright {
+.no-padding-leftright {
 	padding-left:    0;
 	padding-right:   0;
 }
 
 /*Zero padding/margin all side */
 
-.padding-zero-all   {   padding:    0;  }
-.margin-zero-all    {   margin:     0;  }
+.no-padding   {   padding:    0;  }
+.no-margin    {   margin:     0;  }
 
 
 
 
 
-/*------------------------------------*\
+/*====================================*\
+	#BORDER
+\*====================================*/
+
+
+.border-none	{	border-style:	dotted;	}
+.border-dotted	{	border-style:	dashed;	}
+.border-solid	{	border-style:	solid; 	}
+.border-double	{	border-style:	double; }
+
+
+.border-allrounded	{	border-radius:	25px;	}
+.border-squared 	{	border-radius: 	0px;	}
+
+
+
+
+
+/*====================================*\
 	#POSITIONING & WIDTH-HEIGHT
-\*------------------------------------*/
+\*====================================*/
 
 
 .fixed          	{   position:   fixed;      }
@@ -262,19 +316,34 @@ td {
 
 .inherit-min-height {   min-height: inherit;    }
 .inherit-min-width  {   min-width:  inherit;    }
+
 .inherit-height 	{	height: 	inherit;	}
 .inherit-width		{	width: 		inherit;	}
 
-.min-height-100percent	{	min-height:	100%	}
-.min-width-100percent	{	min-width:	100%	}
-.height-100percent		{	height: 	100%	}
-.width-100percent		{	width: 		100%	}
+.min-height-full	{	min-height:	100%		}
+.min-width-full		{	min-width:	100%		}
+
+.max-height-full	{	max-height:	100%		}
+.max-width-full		{	max-width:	100%		}
+
+.height-full		{	height: 	100%		}
+.width-full			{	width: 		100%		}
+
+
+.min-height-half	{	min-height:	50%			}
+.min-width-half		{	min-width:	50%			}
+
+.max-height-half	{	max-height:	50%			}
+.max-width-half		{	max-width:	50%			}
+
+.height-half		{	height: 	50%			}
+.width-half			{	width: 		50%			}
 
 
 /* basically same as 100percent but to be easier to read*/
 
-.height-extend-fitcontatiner		{	height: 	100%	}
-.width-extend-fitcontatiner	{	width: 		100%	}
+.height-fitcontatiner	{	height: 	100%	}
+.width-fitcontatiner	{	width: 		100%	}
 
 
 /* float elements */
@@ -288,51 +357,90 @@ td {
 
 
 
-/*------------------------------------*\
+/*====================================*\
+	#TEXT ALIGNMENT
+\*====================================*/
+
+
+.text-align-left	{	text-align: 	left;		}
+.text-align-right	{	text-align: 	right;		}
+.text-align-center	{	text-align: 	center;		}
+.text-align-justify	{	text-align:		justify;	}
+.text-align-inherit	{	text-align:		inherit;	}
+
+
+
+
+
+/*====================================*\
 	#DISPLAY HELPERS
-\*------------------------------------*/
+\*====================================*/
+
+/* common display settings */
+
+.display-nothing		{	display: 	none;			}
+.display-block			{	display:	block;			}
+.display-inline			{	display: 	inline;			}
+.display-inline-block	{   display:	inline-block;   }
+.display-inline-table	{	display: 	inline-table;	}
+.display-as-list		{	display: 	list-item;		}
+.display-tablecell		{	display:	table-cell;		}
+.display-inherit-parent-element	{	display: inherit;	}
 
 
-.display-inline-div	{   display:	inline-block;   }
-.display-block		{	display:	block;			}
+
+/* overflow */
 
 .hide-content-outofbound 	{	overflow: hidden;	}
 .scroll-content-outofbound	{ 	overflow: scroll;	}
-
-.hide-element   {   visibility: hidden;             }
-
+.visible-scrollbar			{	overflow: visible;	}
 
 
+/* visibility */
+
+.show-element						{	visibility:	visible;	}
+.hide-element   					{   visibility: hidden;     }
+.collapse-elements					{	visibility: collapse;	}
+.inherit-parent-element-visibility	{	visibility: inherit;	}
 
 
-/*------------------------------------*\
+
+
+
+/*====================================*\
 	#BOOTSTRAP OVERRIDING
-\*------------------------------------*/
+\*====================================*/
 
-
-/* Button overriding */
-
-.btn {	border-radius: 0px;	}
-
-/* modal overriding */
-
-.modal-content {	border-radius: 0px;	}
+/* if you want to override bootstrap, place in this section*/
 
 
 
 
 
-/*------------------------------------*\
+
+/*====================================*\
 	#HTML ELEMENTS
-\*------------------------------------*/
-
-/* list (ul,li)*/
-.list-no-bullets{
-	list-style-type: none;
-}
+\*====================================*/
 
 
+/* list (ul,li): invoke either `ul` or `li` elements */
 
-/*------------------------------------*\
+.no-bullets-list				{	list-style-type: none;			}
+.circle-bullets-list			{	list-style-type: circle;		}
+.default-bullets-list			{	list-style-type: disc;			}
+.square-bullets-list			{	list-style-type: square;		}
+.number-list					{	list-style-type: decimal;		}
+.lowercase-latin-list			{	list-style-type: lower-alpha;	}
+.uppercase-latin-list			{	list-style-type: upper-alpha;	}
+.lowercase-romannumueric-list	{	list-style-type: lower-roman;	}
+.uppercase-romannumueric-list	{	list-style-type: upper-roman;	}
+
+
+
+
+
+/*====================================*\
 	#CUSTOM STYLING
-\*------------------------------------*/
+\*====================================*/
+
+/* declare your custom element styling here */
