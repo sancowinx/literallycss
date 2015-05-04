@@ -4,30 +4,30 @@
 
  **** CONTENTS ****
 
- * GENERAL FONTS SETTINGS -     all headings,paragraphs, pre, and blockquote
-                                set a font to show according to the Users' Operating System.
-                                e.g. if OS X => Helvetica Neue, if Windows => Segoe UI
-                                (This can be overridden)
+ * GENERAL FONTS SETTINGS -         all headings,paragraphs, pre, and blockquote
+                                    set a font to show according to the Users' Operating System.
+                                    e.g. if OS X => Helvetica Neue, if Windows => Segoe UI
+                                    (This can be overridden)
 
- * BACKGROUND AND OVERLAY -     Generic Background helpers and overlay
+ * BACKGROUND AND OVERLAY -         Generic Background helpers and overlay
 
- * IMAGE BACKGROUND -           Image background class
+ * IMAGE BACKGROUND -               Image background class
 
- * MARGIN-PADDING UTILS -       presets of margin,padding utilities class
-                                locked at 15px
+ * MARGIN-PADDING UTILS -           presets of margin,padding utilities class
+                                    locked at 15px
 
- * BORDER -                     All border setting
+ * BORDER -                         All border setting
 
- * POSITIONING & WIDTH-HEIGHT - Positioning, Width and height helpers
+ * POSITIONING & WIDTH-HEIGHT -     Positioning, Width and height helpers
 
- * TEXT ALIGNMENT -             Text alignment:; left, right, center, justify, inherit
+ * TEXT ALIGNMENT & MANIPULATION -  Text alignment: left, right, center, justify, inherit;
+                                    also manipulation like no selection
 
- * DISPLAY HELPERS -            Including display type, visibility, and overflow
+ * DISPLAY HELPERS -                Including display type, visibility, and overflow
 
- * BOOTSTRAP OVERRIDING -       Override some default bootstrap property and value
+ * BOOTSTRAP OVERRIDING -           Override some default bootstrap property and value
 
- * HTML ELEMENTS -              html, body, header, footer, section etc.
-
+ * HTML ELEMENTS -                  html, body, header, footer, section etc.
 
 */
 
@@ -50,7 +50,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:      30px;
   font-style:     normal;
   font-variant:   normal;
@@ -59,7 +59,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:      24px;
   font-style:     normal;
   font-variant:   normal;
@@ -68,7 +68,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:      18px;
   font-style:     normal;
   font-variant:   normal;
@@ -77,7 +77,7 @@ h4 {
 }
 
 p {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:      14px;
   font-style:     normal;
   font-variant:   normal;
@@ -86,7 +86,7 @@ p {
 }
 
 a {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:      14px;
   font-style:     normal;
   font-variant:   normal;
@@ -95,7 +95,7 @@ a {
 }
 
 blockquote {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:      17px;
   font-style:     normal;
   font-variant:   normal;
@@ -104,7 +104,7 @@ blockquote {
 }
 
 pre {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:      11px;
   font-style:     normal;
   font-variant:   normal;
@@ -115,7 +115,7 @@ pre {
 /*table*/
 
 th {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:      14px;
   font-style:     normal;
   font-variant:   normal;
@@ -124,7 +124,7 @@ th {
 }
 
 td {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:      14px;
   font-style:     normal;
   font-variant:   normal;
@@ -330,7 +330,7 @@ td {
 
 
 /*====================================*\
-    #TEXT ALIGNMENT
+    #TEXT ALIGNMENT & MANIPULATION
 \*====================================*/
 
 
@@ -339,6 +339,46 @@ td {
 .text-align-center  { text-align:   center;   }
 .text-align-justify { text-align:   justify;  }
 .text-align-inherit { text-align:   inherit;  }
+
+
+/* text overflow */
+
+.textcontent-clip         { text-overflow:  clip;       }
+.textcontent-ellipse      { text-overflow:  ellipsis;   }
+
+/* word wrapping*/
+
+.wrap-longtext-in-content { word-wrap:      break-word; }   /*webcreatorbox.com/en/tutorials/css-tips-for-text*/
+
+
+/* text highlights */
+/*webcreatorbox.com/en/tutorials/css-tips-for-text*/
+
+.highlight-text-blue      { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.highlight-text-cyan      { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.highlight-text-magneta   { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.highlight-text-yellow    { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.highlight-text-green     { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.highlight-text-pink      { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.highlight-text-orange    { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.highlight-text-red       { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.highlight-text-violet    { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.highlight-text-gray      { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+
+
+/* cursor */
+
+.cursor-crosshair   { cursor:crosshair;   }
+.cursor-default     { cursor:default;     }
+.cursor-help        { cursor:help;        }
+.cursor-notallowed  { cursor:not-allowed; }
+.cursor-none        { cursor:none;        }
+.cursor-finger      { cursor:pointer;     }
+.cursor-processing  { cursor:progress;    }
+.cursor-text        { cursor:text;        }
+.cursor-loading     { cursor:wait;        }
+.cursor-zoomin      { cursor:zoom-in;     }
+.cursor-zoomout     { cursor:zoom-out;    }
 
 
 
@@ -351,21 +391,21 @@ td {
 
 /* common display settings */
 
-.display-nothing      { display:  none;         }
-.display-block        { display:  block;        }
-.display-inline       { display:  inline;       }
-.display-inline-block { display:  inline-block; }
-.display-inline-table { display:  inline-table; }
-.display-as-list      { display:  list-item;    }
-.display-tablecell    { display:  table-cell;   }
-.display-inherit-parent-element { display: inherit; }
+.display-nothing                { display:  none;         }
+.display-block                  { display:  block;        }
+.display-inline                 { display:  inline;       }
+.display-inline-block           { display:  inline-block; }
+.display-inline-table           { display:  inline-table; }
+.display-as-list                { display:  list-item;    }
+.display-tablecell              { display:  table-cell;   }
+.display-inherit-parent-element { display:  inherit;      }
 
 
 /* overflow */
 
-.hide-content-outofbound    { overflow: hidden; }
-.scroll-content-outofbound  { overflow: scroll; }
-.visible-scrollbar          { overflow: visible;}
+.hide-content-outofbound        { overflow: hidden;       }
+.scroll-content-outofbound      { overflow: scroll;       }
+.visible-scrollbar              { overflow: visible;      }
 
 
 /* visibility */
