@@ -4,13 +4,17 @@ Just include the a css helper in a class name and it will implement styling as a
     
 For example, you want a image full width of the container (suppose the `<img>` is inside the `<div>`) you can do like this
     
-    `<img class="width-extend-fitcontatiner" src"..." alt="..." />`
-    
+      
+    <img class="width-extend-fitcontatiner" src"..." alt="..." /> 
+
   
 You might use it with jQuery `.addClass()`.  
 For Example:
 
-`$("#someid").addClass("width-fitparent");`  
+     
+     $("#someid").addClass("width-fitparent");
+
+
 
 Compartible with Bootstrap latest version.
     
