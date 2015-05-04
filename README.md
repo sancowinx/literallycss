@@ -2,6 +2,12 @@
 A collection of css helpers class for easier styling for anyone does not (or lazy enough) like to create a lot of repeating a same css property and values.  
 Just include the a css helper in a class name and it will implement styling as a css rules does, literally. 
     
+# Why I make this
+I'm lazy at creating a lot of css rules. :trollface:  
+
+#How to use
+Just include the a css helper in a class name and it will implement styling as a css rules does, literally.  
+
 For example, you want a image full width of the container (suppose the `<img>` is inside the `<div>`) you can do like this
     
       
