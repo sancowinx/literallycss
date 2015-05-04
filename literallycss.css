@@ -9,7 +9,7 @@
                                     e.g. if OS X => Helvetica Neue, if Windows => Segoe UI
                                     (This can be overridden)
 
- * BACKGROUND AND OVERLAY -         Generic Background helpers and overlay
+ * BACKGROUNDS  -                   Generic Background helpers
 
  * IMAGE BACKGROUND -               Image background class
 
@@ -137,7 +137,7 @@ td {
 
 
 /*====================================*\
-    #BACKGROUND AND OVERLAY
+    #BACKGROUNDS
 \*====================================*/
 
 
@@ -154,6 +154,11 @@ td {
 .bg-grey {
   background: #3E3F3E;
   color: #ffffff;
+}
+
+.bg-bashgreenblack {
+  background: #000000;
+  color: #00ff00 
 }
 
 
@@ -334,11 +339,18 @@ td {
 \*====================================*/
 
 
-.text-align-left    { text-align:   left;     }
-.text-align-right   { text-align:   right;    }
-.text-align-center  { text-align:   center;   }
-.text-align-justify { text-align:   justify;  }
-.text-align-inherit { text-align:   inherit;  }
+/* text alignment */
+
+.text-align-left          { text-align:   left;     }
+.text-align-right         { text-align:   right;    }
+.text-align-center        { text-align:   center;   }
+.text-align-justify       { text-align:   justify;  }
+.text-align-inherit       { text-align:   inherit;  }
+
+
+/* word wrapping*/
+
+.wrap-longtext-in-content { word-wrap:      break-word; }   /*webcreatorbox.com/en/tutorials/css-tips-for-text*/
 
 
 /* text overflow */
@@ -346,24 +358,10 @@ td {
 .textcontent-clip         { text-overflow:  clip;       }
 .textcontent-ellipse      { text-overflow:  ellipsis;   }
 
-/* word wrapping*/
 
-.wrap-longtext-in-content { word-wrap:      break-word; }   /*webcreatorbox.com/en/tutorials/css-tips-for-text*/
+/* strikethrough */
 
-
-/* text highlights */
-/*webcreatorbox.com/en/tutorials/css-tips-for-text*/
-
-.highlight-text-blue      { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
-.highlight-text-cyan      { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
-.highlight-text-magneta   { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
-.highlight-text-yellow    { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
-.highlight-text-green     { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
-.highlight-text-pink      { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
-.highlight-text-orange    { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
-.highlight-text-red       { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
-.highlight-text-violet    { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
-.highlight-text-gray      { background: linear-gradient(transparent 50%,[ /*shade_color*/ ]);  }
+.strikethrough-text       { text-decoration: line-through;}
 
 
 /* cursor */
@@ -381,6 +379,27 @@ td {
 .cursor-zoomout     { cursor:zoom-out;    }
 
 
+/* text highlights */
+
+.highlight-text-black         { background: rgba(0,0,0,1)         }
+.highlight-text-terminalgreen { background: rgba(0,255,0,1)       }
+.highlight-text-cyan          { background: rgba(0,255,255,0.8)   }
+.highlight-text-magneta       { background: rgba(255,0,255,0.8)   }
+.highlight-text-yellow        { background: rgba(255,255,0,0.8)   }
+.highlight-text-gray          { background: rgba(128,128,128,0.8) }
+.highlight-text-red           { background: rgba(255,0,0,0.8)     }
+.highlight-text-green         { background: rgba(0,128,0,0.8)     }
+.highlight-text-blue          { background: rgba(0,0,255,0.8);    }
+.highlight-text-pink          { background: rgba(255,192,203,0.8) }
+.highlight-text-orange        { background: rgba(255,165,0,0.8)   }
+.highlight-text-violet        { background: rgba(238,130,238,0.8) }
+.highlight-text-purple        { background: rgba(128,0,128,0.8)   }
+.highlight-text-gold          { background: rgba(255,215,0,0.8)   }
+.highlight-text-brown         { background: rgba(165,42,42,0.8)   }
+.highlight-text-khaki         { background: rgba(240,230,140,0.8) }
+.highlight-text-yellowgreen   { background: rgba(154,205,50,0.8)  }
+
+
 
 
 
@@ -391,21 +410,21 @@ td {
 
 /* common display settings */
 
-.display-nothing                { display:  none;         }
-.display-block                  { display:  block;        }
-.display-inline                 { display:  inline;       }
-.display-inline-block           { display:  inline-block; }
-.display-inline-table           { display:  inline-table; }
-.display-as-list                { display:  list-item;    }
-.display-tablecell              { display:  table-cell;   }
-.display-inherit-parent-element { display:  inherit;      }
+.display-nothing                  { display:  none;         }
+.display-block                    { display:  block;        }
+.display-inline                   { display:  inline;       }
+.display-inline-block             { display:  inline-block; }
+.display-inline-table             { display:  inline-table; }
+.display-as-list                  { display:  list-item;    }
+.display-tablecell                { display:  table-cell;   }
+.display-inherit-parent-element   { display:  inherit;      }
 
 
 /* overflow */
 
-.hide-content-outofbound        { overflow: hidden;       }
-.scroll-content-outofbound      { overflow: scroll;       }
-.visible-scrollbar              { overflow: visible;      }
+.hide-content-outofbound          { overflow: hidden;       }
+.scroll-content-outofbound        { overflow: scroll;       }
+.visible-scrollbar                { overflow: visible;      }
 
 
 /* visibility */
