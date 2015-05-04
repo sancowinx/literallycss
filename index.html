@@ -1,59 +1,105 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>LiterallyCSS by sancowinx</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">LiterallyCSS</h1>
-      <h2 class="project-tagline">are you lazy at styling? why just don&#39;t call it, `literally` instead.</h2>
-      <a href="https://github.com/sancowinx/literallycss" class="btn">View on GitHub</a>
-      <a href="https://github.com/sancowinx/literallycss/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/sancowinx/literallycss/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <section class="main-content">
-      <h1>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>LiterallyCSS by sancowinx</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>LiterallyCSS</h1>
+        <h2>are you lazy at styling? why just don&#39;t call it, `literally` instead.</h2>
+        <a href="https://github.com/sancowinx/literallycss" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
 <a id="literallycss" class="anchor" href="#literallycss" aria-hidden="true"><span class="octicon octicon-link"></span></a>literallycss</h1>
 
-<p>A collection of css helpers class for easier styling for anyone does not (or lazy enough) like to create a lot of repeating a same css property and values.  </p>
+<p>A collection of css helpers class for easier styling for anyone does not (or lazy enough) like to create a lot of repeating a same css property and values.<br>
+Just include the a css helper in a class name and it will implement styling as a css rules does, literally. </p>
 
 <h1>
 <a id="why-i-make-this" class="anchor" href="#why-i-make-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why I make this</h1>
 
-<p>I'm lazy at creating a lot of css rules. <img class="emoji" title=":trollface:" alt=":trollface:" src="https://assets-cdn.github.com/images/icons/emoji/trollface.png" height="20" width="20" align="absmiddle"></p>
+<p>I'm lazy at creating a lot of css rules. <img class="emoji" title=":trollface:" alt=":trollface:" src="https://assets-cdn.github.com/images/icons/emoji/trollface.png" height="20" width="20" align="absmiddle">  </p>
 
 <h1>
 <a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h1>
 
-<p>Just include the a css helper in a class name and it will implement styling as a css rules does, literally. </p>
+<p>Just include the a css helper in a class name and it will implement styling as a css rules does, literally.  </p>
 
 <p>For example, you want a image full width of the container (suppose the <code>&lt;img&gt;</code> is inside the <code>&lt;div&gt;</code>) you can do like this</p>
 
-<p><code>&lt;img class="width-fitparent" src"..." alt="..." /&gt;</code></p>
+<pre><code>&lt;img class="width-extend-fitcontatiner" src"..." alt="..." /&gt; 
+</code></pre>
 
 <p>You might use it with jQuery <code>.addClass()</code>.<br>
 For Example:</p>
 
-<p><code>$("#someid").addClass("width-fitparent");</code></p>
+<pre><code> $("#someid").addClass("width-fitparent");
+</code></pre>
 
 <p>Compartible with Bootstrap latest version.</p>
 
-<p>Suggestions? Feedbacks? All welcome</p>
+<p>Pretty much inspired by Harry Roberts' : <a href="http://cssguidelin.es/">http://cssguidelin.es/</a> so give credits to him. And don't forget visit Harry Roberts' css guidelines websites above. Pretty much a lot of decent CSS advice.</p>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/sancowinx/literallycss">LiterallyCSS</a> is maintained by <a href="https://github.com/sancowinx">sancowinx</a>.</span>
+<p>Credits:<br>
+<a href="http://cssguidelin.es/">cssguidelin.es</a><br>
+<a href="http://www.webcreatorbox.com/en/">webcreatorbox</a>  </p>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+<h1>
+<a id="stylesheet-guides" class="anchor" href="#stylesheet-guides" aria-hidden="true"><span class="octicon octicon-link"></span></a>STYLESHEET GUIDES</h1>
 
-    </section>
+<p>There are nine section of css helpers:</p>
+
+<ul>
+<li>GENERAL FONTS SETTINGS - all headings, paragraphs, pre, and blockquote set a font to show according to the Users' Operating System. e.g. if OS X =&gt; Helvetica Neue, if Windows =&gt; Segoe UI (This can be overridden)</li>
+<li>BACKGROUNDS  - Generic Background helpers</li>
+<li>IMAGE BACKGROUND - Image background class</li>
+<li>MARGIN-PADDING UTILS - presets of margin,padding utilities class locked at 15px</li>
+<li>BORDER - All border setting</li>
+<li>POSITIONING &amp; WIDTH-HEIGHT - Positioning, Width and height helpers </li>
+<li>TEXT ALIGNMENT &amp; MANIPULATION - Text alignment: left, right, center, justify, inherit; also manipulation like no selection</li>
+<li>DISPLAY HELPERS - Including display type, visibility, and overflow</li>
+<li>HTML ELEMENTS - html, body, header, footer, section etc.</li>
+</ul>
+
+<h2>
+<a id="documenting-in-progress" class="anchor" href="#documenting-in-progress" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documenting in progress</h2>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/sancowinx/literallycss/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/sancowinx/literallycss/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/sancowinx/literallycss"></a> is maintained by <a href="https://github.com/sancowinx">sancowinx</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
             <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -68,4 +114,3 @@ For Example:</p>
 
   </body>
 </html>
-
