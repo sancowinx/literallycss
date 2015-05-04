@@ -6,6 +6,12 @@ For example, you want a image full width of the container (suppose the `<img>` i
     
     `<img class="width-extend-fitcontatiner" src"..." alt="..." />`
     
+  
+You might use it with jQuery `.addClass()`.  
+For Example:
+
+`$("#someid").addClass("width-fitparent");`  
+
 Compartible with Bootstrap latest version.
     
 Pretty much inspired by Harry Roberts' : http://cssguidelin.es/ so give credits to him. And don't forget visit Harry Roberts' css guidelines websites above. Pretty much a lot of decent CSS advice.
