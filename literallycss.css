@@ -170,7 +170,6 @@ td {
 
 .image-bg-responsive {
   /*no repeating, positioning top-center*/
-  background: url() no-repeat top center;
   -webkit-background-size:    cover;          /*webkit apple*/
   -moz-background-size:       cover;          /*mozilla firefox*/
   -o-background-size:         cover;          /*opera*/
@@ -220,29 +219,29 @@ td {
 /* Zero padding/margin side (vertical / horizontal) */
 
 .no-margin-topbottom {
-  margin-top:     0;
-  margin-bottom:  0;
+  margin-top:     0 !important;
+  margin-bottom:  0 !important;
 }
 
 .no-margin-leftright {
-  margin-left:    0;
-  margin-right:   0;
+  margin-left:    0 !important;
+  margin-right:   0 !important;
 }
 
 .no-padding-topbottom {
-  padding-top:     0;
-  padding-bottom:  0;
+  padding-top:     0 !important;
+  padding-bottom:  0 !important;
 }
 
 .no-padding-leftright {
-  padding-left:    0;
-  padding-right:   0;
+  padding-left:    0 !important;
+  padding-right:   0 !important;
 }
 
 /*Zero padding/margin all side */
 
-.no-padding   {   padding:    0;  }
-.no-margin    {   margin:     0;  }
+.no-padding   {   padding:    0 !important;  }
+.no-margin    {   margin:     0 !important;  }
 
 
 
@@ -364,17 +363,17 @@ td {
 
 /* cursor */
 
-.cursor-crosshair   { cursor:crosshair;   }
-.cursor-default     { cursor:default;     }
-.cursor-help        { cursor:help;        }
-.cursor-notallowed  { cursor:not-allowed; }
-.cursor-none        { cursor:none;        }
-.cursor-finger      { cursor:pointer;     }
-.cursor-processing  { cursor:progress;    }
-.cursor-text        { cursor:text;        }
-.cursor-loading     { cursor:wait;        }
-.cursor-zoomin      { cursor:zoom-in;     }
-.cursor-zoomout     { cursor:zoom-out;    }
+.cursor-crosshair   { cursor: crosshair;   }
+.cursor-default     { cursor: default;     }
+.cursor-help        { cursor: help;        }
+.cursor-notallowed  { cursor: not-allowed; }
+.cursor-none        { cursor: none;        }
+.cursor-finger      { cursor: pointer;     }
+.cursor-processing  { cursor: progress;    }
+.cursor-text        { cursor: text;        }
+.cursor-loading     { cursor: wait;        }
+.cursor-zoomin      { cursor: zoom-in;     }
+.cursor-zoomout     { cursor: zoom-out;    }
 
 
 /* text highlights */
