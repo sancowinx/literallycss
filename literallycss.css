@@ -397,6 +397,26 @@ td {
 .highlight-text-yellowgreen   { background: rgba(154,205,50,0.8)  }
 
 
+/* anti-aliasing text, make font smooter */
+/* as of CSS3 draft documents, this is still draft, not standarized */
+/* only webkit(safari,chrome) and moz(firefox) */
+
+.text-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+
+/* Text selection disabled */
+
+.disable-text-selection{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none; 
+}
+
+
 
 
 
