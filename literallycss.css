@@ -76,7 +76,7 @@ h4 {
 
 p {
   font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      14px;
+  font-size:      16px;
   font-style:     normal;
   font-variant:   normal;
   font-weight:    300;
@@ -85,7 +85,7 @@ p {
 
 a {
   font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      14px;
+  font-size:      16px;
   font-style:     normal;
   font-variant:   normal;
   font-weight:    300;
@@ -265,7 +265,7 @@ td {
 
 /* border-box */
 
-.border-box         {   box-sizing: border-box; }
+.border-box         {   box-sizing: border-box !important;}
 
 
 
@@ -306,8 +306,8 @@ td {
 
 /* basically same as 100percent but to be easier to read*/
 
-.height-fitparent   {   height:     100%      }
-.width-fitparent    {   width:      100%      }
+.height-fitcontent   {   height:     100% !important      }
+.width-fitcontent    {   width:      100% !important      }
 
 
 .min-height-half    {   min-height: 50%       }
@@ -452,7 +452,14 @@ td {
 .inherit-parent-element-visibility  { visibility: inherit;  }
 
 
-
+/* scale up elements */
+.scale-up {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 
 
 /*====================================*\
