@@ -40,38 +40,38 @@
 
 h1 {
   font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      36px;
+  font-size:      40px;
   font-style:     normal;
   font-variant:   normal;
-  font-weight:    300;
+  font-weight:    700;
   line-height:    48px;
 }
 
 h2 {
   font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      30px;
+  font-size:      34px;
   font-style:     normal;
   font-variant:   normal;
-  font-weight:    200;
-  line-height:    30px;
+  font-weight:    600;
+  line-height:    40px;
 }
 
 h3 {
   font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      24px;
+  font-size:      28px;
   font-style:     normal;
   font-variant:   normal;
-  font-weight:    200;
-  line-height:    24px;
+  font-weight:    500;
+  line-height:    32px;
 }
 
 h4 {
   font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      18px;
+  font-size:      26px;
   font-style:     normal;
   font-variant:   normal;
-  font-weight:    100;
-  line-height:    18px;
+  font-weight:    400;
+  line-height:    32px;
 }
 
 p {
@@ -79,7 +79,7 @@ p {
   font-size:      16px;
   font-style:     normal;
   font-variant:   normal;
-  font-weight:    300;
+  font-weight:    400;
   line-height:    24px;
 }
 
@@ -88,13 +88,13 @@ a {
   font-size:      16px;
   font-style:     normal;
   font-variant:   normal;
-  font-weight:    300;
+  font-weight:    400;
   line-height:    24px;
 }
 
 blockquote {
   font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      17px;
+  font-size:      18px;
   font-style:     normal;
   font-variant:   normal;
   font-weight:    400;
@@ -117,7 +117,7 @@ th {
   font-size:      14px;
   font-style:     normal;
   font-variant:   normal;
-  font-weight:    300;
+  font-weight:    600;
   line-height:    24px;
 }
 
@@ -126,9 +126,15 @@ td {
   font-size:      14px;
   font-style:     normal;
   font-variant:   normal;
-  font-weight:    300;
+  font-weight:    400;
   line-height:    24px;
 }
+
+
+/* Fonts options based on OS */
+.font-os-sans-serif { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.font-opensans      { font-family: 'Open Sans', sans-serif; }
+
 
 
 
@@ -240,8 +246,8 @@ td {
 
 /*Zero padding/margin all side */
 
-.no-padding   {   padding:    0 !important;  }
-.no-margin    {   margin:     0 !important;  }
+.no-padding { padding:    0 !important; }
+.no-margin  { margin:     0 !important; }
 
 
 
@@ -252,20 +258,20 @@ td {
 \*====================================*/
 
 
-.border-none        {   border-style: dotted;   }
-.border-dotted      {   border-style: dashed;   }
-.border-solid       {   border-style: solid;    }
-.border-double      {   border-style: double;   }
+.border-none        { border-style: dotted; }
+.border-dotted      { border-style: dashed; }
+.border-solid       { border-style: solid;  }
+.border-double      { border-style: double; }
 
 
 /* Radius */
 
-.border-allrounded  {   border-radius:  25px;   }
-.border-squared     {   border-radius:  0;      }
+.border-allrounded  { border-radius:  25px !important;  }
+.border-squared     { border-radius:  0   !important;   }
 
 /* border-box */
 
-.border-box         {   box-sizing: border-box !important;}
+.border-box         { box-sizing: border-box !important;  }
 
 
 
@@ -304,10 +310,10 @@ td {
 .height-full        {   height:     100%      }
 .width-full         {   width:      100%      }
 
-/* basically same as 100percent but to be easier to read*/
+/* basically same as above but to be easier to read*/
 
-.height-fitcontent   {   height:     100% !important      }
-.width-fitcontent    {   width:      100% !important      }
+.height-fitcontent  {   height:     100% !important }
+.width-fitcontent   {   width:      100% !important }
 
 
 .min-height-half    {   min-height: 50%       }
@@ -347,18 +353,18 @@ td {
 
 /* word wrapping*/
 
-.wrap-longtext-in-content { word-wrap:      break-word; }   /*webcreatorbox.com/en/tutorials/css-tips-for-text*/
+.wrap-longtext-in-content { word-wrap:  break-word; }   /*webcreatorbox.com/en/tutorials/css-tips-for-text*/
 
 
 /* text overflow */
 
-.textcontent-clip         { text-overflow:  clip;       }
-.textcontent-ellipse      { text-overflow:  ellipsis;   }
+.textcontent-clip     { text-overflow:  clip;       }
+.textcontent-ellipse  { text-overflow:  ellipsis;   }
 
 
 /* strikethrough */
 
-.strikethrough-text       { text-decoration: line-through;}
+.strikethrough-text { text-decoration: line-through;  }
 
 
 /* cursor */
