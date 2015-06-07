@@ -11,7 +11,7 @@
 
  * BACKGROUNDS  -                   Generic Background helpers
 
- * IMAGE BACKGROUND -               Image background class
+ * IMAGE UTILITIES -                Image utilities class
 
  * MARGIN-PADDING UTILS -           presets of margin,padding utilities class
                                     locked at 15px
@@ -36,6 +36,11 @@
 /*====================================*\
     #GENERAL FONTS SETTINGS
 \*====================================*/
+
+
+/* font-import */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
 
 h1 {
@@ -136,6 +141,17 @@ td {
 .font-opensans      { font-family: 'Open Sans', sans-serif; }
 
 
+/* font style */
+
+.font-style-normal    { font-style: normal;   }
+
+
+/* font variant: normal, small-cap, default */
+
+.font-variant-normal      { font-variant: normal;     }
+.font-variant-small-caps  { font-variant: small-caps; }
+.font-variant-initial     { font-variant: initial;    }
+
 
 
 
@@ -170,18 +186,43 @@ td {
 
 
 /*====================================*\
-    #IMAGE BACKGROUND
+    #IMAGE UTILITIES
 \*====================================*/
 
 
 .image-bg-responsive {
   /*no repeating, positioning top-center*/
   -webkit-background-size:    cover;          /*webkit apple*/
-  -moz-background-size:       cover;          /*mozilla firefox*/
-  -o-background-size:         cover;          /*opera*/
-  background-size:            cover;
-  min-height:                 400px;
+     -moz-background-size:    cover;          /*mozilla firefox*/
+       -o-background-size:    cover;          /*opera*/
+          background-size:    cover;
+               min-height:    400px;
 }
+
+/* image filtering */
+
+
+.image-filter-opacity-half {
+  -webkit-filter: opacity(.5);
+          filter: opacity(.5);
+}
+
+.image-filter-opacity-none {
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
+}
+
+.image-filter-grayscale { 
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.image-filter-sepia {
+  -webkit-filter: sepia(1);
+          filter: sepia(1);
+}
+
+
 
 
 /*====================================*\
@@ -272,6 +313,8 @@ td {
 /* border-box */
 
 .border-box         { box-sizing: border-box !important;  }
+
+
 
 
 
@@ -367,6 +410,13 @@ td {
 .strikethrough-text { text-decoration: line-through;  }
 
 
+/* cleartext */
+
+.clear-left   { clear: left; }
+.clear-right  { clear: right; }
+.clear-both   { clear: both; }
+
+
 /* cursor */
 
 .cursor-crosshair   { cursor: crosshair;   }
@@ -417,9 +467,10 @@ td {
 
 .disable-text-selection{
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none; 
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
 }
 
 
@@ -458,14 +509,7 @@ td {
 .inherit-parent-element-visibility  { visibility: inherit;  }
 
 
-/* scale up elements */
-.scale-up {
-  -webkit-transform:  scale(1.2);
-  -moz-transform:     scale(1.2);
-  -o-transform:       scale(1.2);
-  -ms-transform:      scale(1.2);
-  transform:          scale(1.2);
-}
+
 
 
 /*====================================*\
@@ -484,3 +528,79 @@ td {
 .uppercase-latin-list           { list-style-type: upper-alpha; }
 .lowercase-romannumueric-list   { list-style-type: lower-roman; }
 .uppercase-romannumueric-list   { list-style-type: upper-roman; }
+
+
+/* opacity */
+
+.opacity-none { opacity: 0;   }
+.opacity-half { opacity: .5;  }
+
+
+/* z-index order */
+
+.order-front    { z-index: 666;      }
+.order-default  { z-index: initial;  }
+.order-inherit  { z-index: inherit;  }
+
+
+/* transition */
+
+.transition-default     { transition-timing-function: initial;      }
+.transition-linear      { transition-timing-function: linear;       }
+.transition-easein      { transition-timing-function: ease-in;      }
+.transition-easeout     { transition-timing-function: ease-out;     }
+.transition-easeinout   { transition-timing-function: ease-in-out;  }
+
+
+/* rotate element */
+
+.transform-rotate-clockwise-90 {
+  -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+       -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+
+.transform-rotate-counterclockwise-90 {
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+
+/* scale up elements */
+
+.transform-scaleup {
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+
+/* resizing element */
+
+.resize-vertical {
+  resize: vertical;
+  overflow: auto;
+}
+
+.resize-horizontal {
+  resize: horizontal;
+  overflow: auto;
+}
+
+.resize-both {
+  resize: both;
+  overflow: auto;
+}
+
+.resize-none {
+  resize: none;
+  overflow: auto;
+}
