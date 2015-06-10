@@ -4,10 +4,8 @@
 
  **** CONTENTS ****
 
- * GENERAL FONTS SETTINGS -         all headings,paragraphs, pre, and blockquote
-                                    set a font to show according to the Users' Operating System.
-                                    e.g. if OS X => Helvetica Neue, if Windows => Segoe UI
-                                    (This can be overridden)
+ * GENERAL FONTS SETTINGS -         Offers a rules for setting a font based on OS of client.
+                                    Or use Open Sans.
 
  * BACKGROUNDS  -                   Generic Background helpers
 
@@ -42,101 +40,8 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
+/* Font options */
 
-h1 {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      40px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    700;
-  line-height:    48px;
-}
-
-h2 {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      34px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    600;
-  line-height:    40px;
-}
-
-h3 {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      28px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    500;
-  line-height:    32px;
-}
-
-h4 {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      26px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    400;
-  line-height:    32px;
-}
-
-p {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      16px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    400;
-  line-height:    24px;
-}
-
-a {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      16px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    400;
-  line-height:    24px;
-}
-
-blockquote {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      18px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    400;
-  line-height:    23px;
-}
-
-pre {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      11px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    400;
-  line-height:    23px;
-}
-
-/*table*/
-
-th {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      14px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    600;
-  line-height:    24px;
-}
-
-td {
-  font-family:    'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:      14px;
-  font-style:     normal;
-  font-variant:   normal;
-  font-weight:    400;
-  line-height:    24px;
-}
-
-
-/* Fonts options based on OS */
 .font-os-sans-serif { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 .font-opensans      { font-family: 'Open Sans', sans-serif; }
 
@@ -341,6 +246,9 @@ td {
 .inherit-min-height {   min-height: inherit;  }
 .inherit-min-width  {   min-width:  inherit;  }
 
+.inherit-max-height {   max-height: inherit;  }
+.inherit-max-width  {   max-width:  inherit;  }
+
 .inherit-height     {   height:     inherit;  }
 .inherit-width      {   width:      inherit;  }
 
@@ -368,6 +276,8 @@ td {
 .height-half        {   height:     50%       }
 .width-half         {   width:      50%       }
 
+.height-auto        {   height:     auto;     }
+.width-auto         {   width:      auto;     }
 
 /* float elements */
 
@@ -456,10 +366,11 @@ td {
 /* anti-aliasing text, make font smooter */
 /* as of CSS3 draft documents, this is still draft, not standarized */
 /* only webkit(safari,chrome) and moz(firefox) */
+/* default of font-smooting is "subpixel-antialiased"  */
 
 .text-smooth {
   -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
 }
 
 
