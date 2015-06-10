@@ -3,7 +3,9 @@ A collection of css helpers class for easier styling for anyone does not (or laz
 Just include the a css helper in a class name and it will implement styling as a css rules does, literally. 
     
 # Why I make this
-I'm lazy at creating a lot of css rules. :trollface:  
+I want to know how to properly use css and creating stylesheet that will be easier to read or easier to understood what the css is doing by naming it as what it's do. The code should tell you literally what it really do. (Like Rails controller)
+
+tl;dr I'm lazy at creating a lot of css rules. So I created this. :trollface:  
 
 #How to use
 Just include the a css helper in a class name and it will implement styling as a css rules does, literally.  
