@@ -35,7 +35,6 @@ Credits:
 
 # Some possible issue
 * Text. I haven't test with the non-latin language (Like Chinese Mandarin, Japanese Katakana/Hiragana/Kanji) so I don't know whether it will break on usage it or not.  
-* 
 
 
 ---
@@ -60,23 +59,23 @@ There are nine section of css helpers:
 ## GENERAL FONTS SETTINGS  
 Offers a rules for setting a font based on OS of client. Or use Open Sans.  
 
-`.font-os-sans-serif { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }`  
+* `.font-os-sans-serif { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }`  
 Set selected text element to show the font based on client OS.  
 For instance, if user using Windows 7 or newer, Segoe UI will be rendered. For OS X or iOS, Helvetica Neue will be rendered  
 
-`.font-opensans      { font-family: 'Open Sans', sans-serif; }`  
+* `.font-opensans      { font-family: 'Open Sans', sans-serif; }`  
 Set selected text element to use Open Sans.  
 
-`.font-style-normal    { font-style: normal; }`  
+* `.font-style-normal    { font-style: normal; }`  
 Set selected text element font style to be normal.  
 
-`.font-variant-normal      { font-variant: normal; }`  
+* `.font-variant-normal      { font-variant: normal; }`  
 Set selected text element font variant to be normal.  
 
-`.font-variant-small-caps  { font-variant: small-caps; }`  
+* `.font-variant-small-caps  { font-variant: small-caps; }`  
 Set selected text element font variant to be rendered as a small capital. First Character will be full width.  
 
-`.font-variant-initial     { font-variant: initial; }`  
+* `.font-variant-initial     { font-variant: initial; }`  
 Set selected text element font variant to be normal.  
 
 # Documenting in progress
