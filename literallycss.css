@@ -68,22 +68,22 @@
 
 .bg-white {
   background: #FFFFFF;
-  color: #000000;
+       color: #000000;
 }
 
 .bg-black {
   background: #000000;
-  color: #ffffff;
+       color: #ffffff;
 }
 
 .bg-grey {
   background: #3E3F3E;
-  color: #ffffff;
+       color: #ffffff;
 }
 
 .bg-bashgreenblack {
   background: #000000;
-  color: #00ff00 
+       color: #00ff00 
 }
 
 
@@ -322,9 +322,9 @@
 
 /* cleartext */
 
-.clear-left   { clear: left; }
+.clear-left   { clear: left;  }
 .clear-right  { clear: right; }
-.clear-both   { clear: both; }
+.clear-both   { clear: both;  }
 
 
 /* cursor */
@@ -361,6 +361,18 @@
 .highlight-text-brown         { background: rgba(165,42,42,0.8)   }
 .highlight-text-khaki         { background: rgba(240,230,140,0.8) }
 .highlight-text-yellowgreen   { background: rgba(154,205,50,0.8)  }
+
+
+/* spoiler */
+.spoiler {
+  background: #000000;
+       color: #000000;
+}
+
+.spoiler:hover {
+  background: transparent;
+       color: inherit;
+}
 
 
 /* anti-aliasing text, make font smooter */
@@ -497,21 +509,21 @@
 /* resizing element */
 
 .resize-vertical {
-  resize: vertical;
+    resize: vertical;
   overflow: auto;
 }
 
 .resize-horizontal {
-  resize: horizontal;
+    resize: horizontal;
   overflow: auto;
 }
 
 .resize-both {
-  resize: both;
+    resize: both;
   overflow: auto;
 }
 
 .resize-none {
-  resize: none;
+    resize: none;
   overflow: auto;
 }
