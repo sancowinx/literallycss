@@ -16,15 +16,19 @@ module.exports = function(grunt) {
           ext: '.min.css'
         }]
       }
+    },
+    cssdocs:{
+      options:{ },
+      files:{ 
+        src: 'literallycss.css',
+      }
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-
+  grunt.loadNpmTasks('grunt-css-docs');
+  
   // Default task(s).
-  //grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('default', ['cssmin']);
+  grunt.registerTask('default', ['cssmin','cssdocs']);
 
 };
