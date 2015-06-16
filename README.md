@@ -79,35 +79,35 @@ Set selected text element font variant to be normal.
 ## BACKGROUNDS 
 Generally, you might add these following class to the wrapper (supposely `<div>` or `<article>` or `<sections>`) of the text elements inside. Actually the following classes will set exactly what you will see here.  
 
-`.bg-white`  
+* `.bg-white`  
 White colored with black text
 
-`.bg-black`  
+* `.bg-black`  
 Black colored background with white text
 
-`.bg-grey`  
+* `.bg-grey`  
 Background grey with white text  
 
-`.bg-bashgreenblack`  
+* `.bg-bashgreenblack`  
 Add vintage, unix terminal style background and text
 
 
 ## IMAGE UTILITIES
 Set of image utilities classes, including making background image responsive and image filtering  
 
-`.image-bg-responsive`  
+* `.image-bg-responsive`  
 Set the selected image to be rendered responsive. However you need to define the image source using with positioning like `background: url(...Your image url...) top center`  
 
-`.image-filter-opacity-half`  
+* `.image-filter-opacity-half`  
 Set image filtering to render with half inage opacity
 
-`.image-filter-opacity-none`  
+* `.image-filter-opacity-none`  
 Set image filtering to render with no opacity at all
 
-`.image-filter-grayscale`  
+* `.image-filter-grayscale`  
 Set image filtering grayscale
 
-`.image-filter-sepia`  
+* `.image-filter-sepia`  
 Set image filtering sepia
 
 # Documenting in progress
