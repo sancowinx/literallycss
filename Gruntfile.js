@@ -17,18 +17,24 @@ module.exports = function(grunt) {
         }]
       }
     },
-    cssdocs:{
-      options:{ },
-      files:{ 
-        src: 'literallycss.css',
+    csslint :{
+      options:{
+        formatters: [
+          {id: 'junit-xml', dest: 'report/csslint_junit.xml'},
+          {id: 'csslint-xml', dest: 'report/csslint.xml'}]
+      },
+      target: {
+        files: {
+          src: 'literallycss.css'
+        }
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-css-docs');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
   
   // Default task(s).
-  grunt.registerTask('default', ['cssmin','cssdocs']);
+  grunt.registerTask('default', ['cssmin','csslint']);
 
 };

@@ -19,6 +19,6 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-cssmin": "^0.12.3",
-    "grunt-css-docs": "^1.1.5"
+    "grunt-contrib-csslint": "^0.4.0"
   }
 }
