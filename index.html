@@ -22,25 +22,23 @@
       <h1>
 <a id="literallycss" class="anchor" href="#literallycss" aria-hidden="true"><span class="octicon octicon-link"></span></a>literallycss</h1>
 
-<p>A collection of css helpers class for easier styling for anyone does not (or lazy enough) like to create a lot of repeating a same css property and values.<br>
-Just include the a css helper in a class name and it will implement styling as a css rules does, literally. </p>
+<p>A collection of css helpers class for anyone does not (or too lazy) like to create a lot of repeating a same css property and values. Just include the a css helper in a class name and it will implement styling as a css rules does, literally. </p>
 
 <h1>
 <a id="why-i-make-this" class="anchor" href="#why-i-make-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why I make this</h1>
-
-<p>I want to know how to properly use css and creating stylesheet that will be easier to read or easier to understood what the css is doing by naming it as what it's do. The code should tell you literally what it really do. (Like Rails controller index,destroy,create)</p>
 
 <p><strong>tl;dr</strong> I'm lazy at creating a lot of css rules. So I created this. <img class="emoji" title=":trollface:" alt=":trollface:" src="https://assets-cdn.github.com/images/icons/emoji/trollface.png" height="20" width="20" align="absmiddle">  </p>
 
 <h1>
 <a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h1>
 
-<p>Just include the a css helper in a class name and it will implement styling as a css rules does, literally.  </p>
+<p>Just include the a css helper in a class name and it will implement styling as a css rules does, literally.<br>
+For example, you want a image full width of the container (suppose the <code>&lt;img&gt;</code> is inside the <code>&lt;div&gt;</code>) you can do like this</p>
 
-<p>For example, you want a image full width of the container (suppose the <code>&lt;img&gt;</code> is inside the <code>&lt;div&gt;</code>) you can do like this</p>
-
-<pre><code>&lt;img class="width-extend-fitcontatiner" src"..." alt="..." /&gt; 
+<pre><code>&lt;img class="width-fitcontent" src"..." alt="..." /&gt; 
 </code></pre>
+
+<p>Will make this <code>&lt;img&gt;</code> extend to fit the wrapper</p>
 
 <p>You might use it with jQuery <code>.addClass()</code> with some event or callback 
 For Example:</p>
@@ -50,18 +48,18 @@ For Example:</p>
 
 <p>Compartible with Bootstrap latest version.</p>
 
-<p>Pretty much inspired by Harry Roberts' : <a href="http://cssguidelin.es/">http://cssguidelin.es/</a> so give credits to him. And don't forget visit Harry Roberts' css guidelines websites above. Pretty much a lot of decent CSS advice.</p>
+<p>For a naming of all css classes, syntax and format was pretty much inspired by Harry Roberts' <a href="http://cssguidelin.es/">http://cssguidelin.es/</a>.</p>
 
-<p>Credits:<br>
+<p>Credits to these following awesome guides:<br>
 <a href="http://cssguidelin.es/">cssguidelin.es</a><br>
-<a href="http://www.webcreatorbox.com/en/">webcreatorbox</a>  </p>
+<a href="http://www.webcreatorbox.com/en/">webcreatorbox</a><br>
+<a href="https://css-tricks.com/">css-tricks</a></p>
 
 <h1>
 <a id="some-possible-issue" class="anchor" href="#some-possible-issue" aria-hidden="true"><span class="octicon octicon-link"></span></a>Some possible issue</h1>
 
 <ul>
-<li>Text. I haven't test with the non-latin language (Like Chinese Mandarin, Japanese Katakana/Hiragana/Kanji) so I don't know whether it will break on usage it or not.<br>
-</li>
+<li>I haven't test with the non-latin language (Like Chinese Mandarin, Japanese Katakana/Hiragana/Kanji).</li>
 </ul>
 
 <hr>
@@ -94,20 +92,57 @@ For Example:</p>
 <p>Offers a rules for setting a font based on OS of client. Or use Open Sans.  </p>
 
 <ul>
-<li><p><code>.font-os-sans-serif { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }</code><br>
+<li><p><code>.font-os-sans-serif</code><br>
 Set selected text element to show the font based on client OS.<br>
 For instance, if user using Windows 7 or newer, Segoe UI will be rendered. For OS X or iOS, Helvetica Neue will be rendered  </p></li>
-<li><p><code>.font-opensans      { font-family: 'Open Sans', sans-serif; }</code><br>
+<li><p><code>.font-opensan</code><br>
 Set selected text element to use Open Sans.  </p></li>
-<li><p><code>.font-style-normal    { font-style: normal; }</code><br>
+<li><p><code>.font-style-normal</code><br>
 Set selected text element font style to be normal.  </p></li>
-<li><p><code>.font-variant-normal      { font-variant: normal; }</code><br>
+<li><p><code>.font-variant-normal</code><br>
 Set selected text element font variant to be normal.  </p></li>
-<li><p><code>.font-variant-small-caps  { font-variant: small-caps; }</code><br>
+<li><p><code>.font-variant-small-caps</code><br>
 Set selected text element font variant to be rendered as a small capital. First Character will be full width.  </p></li>
-<li><p><code>.font-variant-initial     { font-variant: initial; }</code><br>
+<li><p><code>.font-variant-initial</code><br>
 Set selected text element font variant to be normal.  </p></li>
 </ul>
+
+<h2>
+<a id="backgrounds" class="anchor" href="#backgrounds" aria-hidden="true"><span class="octicon octicon-link"></span></a>BACKGROUNDS</h2>
+
+<p>Generally, you might add these following class to the wrapper (supposely <code>&lt;div&gt;</code> or <code>&lt;article&gt;</code> or <code>&lt;sections&gt;</code>) of the text elements inside. Actually the following classes will set exactly what you will see here.  </p>
+
+<p><code>.bg-white</code><br>
+White colored with black text</p>
+
+<p><code>.bg-black</code><br>
+Black colored background with white text</p>
+
+<p><code>.bg-grey</code><br>
+Background grey with white text  </p>
+
+<p><code>.bg-bashgreenblack</code><br>
+Add vintage, unix terminal style background and text</p>
+
+<h2>
+<a id="image-utilities" class="anchor" href="#image-utilities" aria-hidden="true"><span class="octicon octicon-link"></span></a>IMAGE UTILITIES</h2>
+
+<p>Set of image utilities classes, including making background image responsive and image filtering  </p>
+
+<p><code>.image-bg-responsive</code><br>
+Set the selected image to be rendered responsive. However you need to define the image source using with positioning like <code>background: url(...Your image url...) top center</code>  </p>
+
+<p><code>.image-filter-opacity-half</code><br>
+Set image filtering to render with half inage opacity</p>
+
+<p><code>.image-filter-opacity-none</code><br>
+Set image filtering to render with no opacity at all</p>
+
+<p><code>.image-filter-grayscale</code><br>
+Set image filtering grayscale</p>
+
+<p><code>.image-filter-sepia</code><br>
+Set image filtering sepia</p>
 
 <h1>
 <a id="documenting-in-progress" class="anchor" href="#documenting-in-progress" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documenting in progress</h1>
