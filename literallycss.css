@@ -364,6 +364,7 @@
 
 
 /* spoiler */
+
 .spoiler {
   background: #000000;
        color: #000000;
@@ -430,6 +431,14 @@
 .hide-element                       { visibility: hidden;   }
 .collapse-elements                  { visibility: collapse; }
 .inherit-parent-element-visibility  { visibility: inherit;  }
+
+
+/* blank space */
+
+.spaces {
+  height: 15px;
+  width:  auto;
+}
 
 
 
@@ -527,3 +536,8 @@
     resize: none;
   overflow: auto;
 }
+
+
+/* solid line */
+
+.solid-horizontal-line { border-bottom: 2px solid #000000; }
