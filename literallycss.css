@@ -107,25 +107,67 @@
 /* image filtering */
 
 
-.image-filter-opacity-half {
+.filter-image-opacity-half {
   -webkit-filter: opacity(.5);
           filter: opacity(.5);
 }
 
-.image-filter-opacity-none {
+.filter-image-opacity-none {
   -webkit-filter: opacity(0);
           filter: opacity(0);
 }
 
-.image-filter-grayscale { 
+.filter-image-grayscale { 
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
 
-.image-filter-sepia {
+.filter-image-sepia {
   -webkit-filter: sepia(1);
           filter: sepia(1);
 }
+
+.filter-image-brighten {
+  background: #ffffff;
+  opacity: .75;
+}
+
+.filter-image-negative {
+  -webkit-filter: invert(1);
+         -filter: invert(1);
+}
+
+
+/* Zooming effects @imagezoom*/
+
+/*
+   Zooming effects requires any container to indicate the border of the 
+   container of all elements/tags inside to limit its content not overlapping
+   or overflow to another elements (like image on each side left/right)
+   , in this case it's image tag.
+
+   For Example
+   <div class="image-zooming-container">
+     <img src="..."/>
+   </div>
+*/
+
+.zoom-image-inside {  overflow: hidden; }
+
+.zoom-image-inside img {
+  -webkit-transition: 1s ease-in-out;
+     -moz-transition: 1s ease-in-out;
+      -ms-transition: 1s ease-in-out;
+       -o-transition: 1s ease-in-out;          
+}
+
+.zoom-image-inside img:hover {
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+}
+
 
 
 
@@ -213,7 +255,7 @@
 /* Radius */
 
 .border-allrounded  { border-radius:  25px !important;  }
-.border-squared     { border-radius:  0   !important;   }
+.border-allsquared     { border-radius:  0    !important;  }
 
 /* border-box */
 
@@ -258,23 +300,23 @@
 .max-height-full    {   max-height: 100%;     }
 .max-width-full     {   max-width:  100%;     }
 
-.height-full        {   height:     100%      }
-.width-full         {   width:      100%      }
+.height-full        {   height:     100%;     }
+.width-full         {   width:      100%;     }
 
 /* basically same as above but to be easier to read*/
 
-.height-fitcontent  {   height:     100% !important }
-.width-fitcontent   {   width:      100% !important }
+.height-fitcontent  {   height:     100%;     }
+.width-fitcontent   {   width:      100%;     }
 
 
-.min-height-half    {   min-height: 50%       }
-.min-width-half     {   min-width:  50%       }
+.min-height-half    {   min-height: 50%;      }
+.min-width-half     {   min-width:  50%;      }
 
-.max-height-half    {   max-height: 50%       }
-.max-width-half     {   max-width:  50%       }
+.max-height-half    {   max-height: 50%;      }
+.max-width-half     {   max-width:  50%;      }
 
-.height-half        {   height:     50%       }
-.width-half         {   width:      50%       }
+.height-half        {   height:     50%;      }
+.width-half         {   width:      50%;      }
 
 .height-auto        {   height:     auto;     }
 .width-auto         {   width:      auto;     }
@@ -381,7 +423,7 @@
 /* only webkit(safari,chrome) and moz(firefox) */
 /* default of font-smooting is "subpixel-antialiased"  */
 
-.text-smooth {
+.smoothen-text {
   -webkit-font-smoothing: antialiased;
      -moz-font-smoothing: antialiased;
 }
@@ -418,6 +460,16 @@
 .display-inherit-parent-element   { display: inherit;      }
 
 
+/* Normally, inline elements (suchas anchor "<a>") does not have 
+   height and width element. To make it resizable, set to
+   `display: inline-block`
+
+   or use below CSS class.
+*/
+
+.resizable-inline-element         { display: inline-block !important; }
+
+
 /* overflow */
 
 .hide-content-outofbound          { overflow: hidden;       }
@@ -438,6 +490,16 @@
 .spaces {
   height: 15px;
   width:  auto;
+}
+
+.spaces-large {
+  height: 60px;
+  width: auto;
+}
+
+.space-extra {
+  height: 240px;
+  width: auto;
 }
 
 
