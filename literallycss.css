@@ -91,7 +91,7 @@
 
 
 /*====================================*\
-    #IMAGE UTILITIES
+    #IMAGE UTILITIES @image-utilities
 \*====================================*/
 
 
@@ -169,6 +169,10 @@
 }
 
 
+/* Shadow */
+/* - Adds little shadow to the image */
+
+.shadow-image { box-shadow: 1px 1px 5px #000000; }
 
 
 
