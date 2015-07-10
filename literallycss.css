@@ -4,8 +4,7 @@
 
  **** CONTENTS ****
 
- * GENERAL FONTS SETTINGS -         Offers a rules for setting a font based on OS of client.
-                                    Or use Open Sans.
+ * FONTS SETTINGS -                 Setting a font based on OS of client. Or use Open Sans.
 
  * BACKGROUNDS  -                   Generic Background helpers
 
@@ -32,7 +31,7 @@
 
 
 /*====================================*\
-    #GENERAL FONTS SETTINGS
+    #FONTS SETTINGS @fonts-settings
 \*====================================*/
 
 
@@ -40,6 +39,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700);
+
 /* Font options */
 
 .font-os-sans-serif { font-family: 'Segoe UI', 'Helvetica Neue', Arial, Helvetica, sans-serif; }
@@ -62,7 +62,7 @@
 
 
 /*====================================*\
-    #BACKGROUNDS
+    #BACKGROUNDS  @backgrounds
 \*====================================*/
 
 
@@ -176,8 +176,11 @@
 
 
 
+
+
 /*====================================*\
-    #MARGIN-PADDING UTILS
+    #MARGIN-PADDING UTILS 
+    @margin-padding-utils
 \*====================================*/
 
 
@@ -246,7 +249,7 @@
 
 
 /*====================================*\
-    #BORDER
+    #BORDER @border
 \*====================================*/
 
 
@@ -270,7 +273,8 @@
 
 
 /*====================================*\
-    #POSITIONING & WIDTH-HEIGHT
+    #POSITIONING & WIDTH-HEIGHT 
+    @positioning-width-height
 \*====================================*/
 
 
@@ -337,7 +341,8 @@
 
 
 /*====================================*\
-    #TEXT ALIGNMENT & MANIPULATION
+    #TEXT ALIGNMENT & MANIPULATION  
+    @textalignment-manipulation
 \*====================================*/
 
 
@@ -448,7 +453,7 @@
 
 
 /*====================================*\
-    #DISPLAY HELPERS
+    #DISPLAY HELPERS @display-helpers
 \*====================================*/
 
 
@@ -511,7 +516,7 @@
 
 
 /*====================================*\
-    #HTML ELEMENTS
+    #HTML ELEMENTS  @html-elements
 \*====================================*/
 
 
