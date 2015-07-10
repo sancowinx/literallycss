@@ -11,7 +11,7 @@
  * IMAGE UTILITIES -                Image utilities class
 
  * MARGIN-PADDING UTILS -           presets of margin,padding utilities class
-                                    locked at 15px
+                                    LOCKED AT 15PX
 
  * BORDER -                         All border setting
 
@@ -135,6 +135,48 @@
 .filter-image-negative {
   -webkit-filter: invert(1);
          -filter: invert(1);
+}
+
+
+/* Object-fit */
+/* Object-fit will set the image fit within the given 
+  dimension (width-height) 
+  e.g. img elements was fixed to the width: 500px and height: 500px;
+       if you called object-fit rules below. It will resize the image
+       as the rules was named.
+
+  NOTE: DIMENSION (width, height) MUST BE SPECIFIED 
+  IN ORDER TO MAKE object-fit WORKS!;
+
+*/
+
+.image-fit_stretches  { 
+  object-fit: fill;
+    overflow: hidden;       
+}
+.image-fit_contained  { 
+  object-fit: contain;
+    overflow: hidden;    
+}
+.image-fit_cover  { 
+  object-fit: cover;
+    overflow: hidden;      
+}
+.image-fit_scaled { 
+  object-fit: scale-down;
+    overflow: hidden; 
+}
+.image-fit_none { 
+  object-fit: none;
+    overflow: hidden;       
+}
+.image-fit_unset  { 
+  object-fit: unset;
+    overflow: hidden;      
+}
+.image-fit_initial  { 
+  object-fit: initial;
+    overflow: hidden;    
 }
 
 
@@ -328,6 +370,7 @@
 
 .height-auto        {   height:     auto;     }
 .width-auto         {   width:      auto;     }
+
 
 /* float elements */
 
