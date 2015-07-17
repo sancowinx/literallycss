@@ -555,6 +555,11 @@
 }
 
 
+/* clearfix 
+ * dirty clearfix hack
+*/
+
+.clearfix { overflow: auto; }
 
 
 
