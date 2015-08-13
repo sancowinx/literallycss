@@ -22,7 +22,7 @@
 
  * DISPLAY HELPERS -                Including display type, visibility, and overflow
 
- * HTML ELEMENTS -                  html, body, header, footer, section etc.
+ * OTHER UTILITIES -                Other utilities classes like no list bullet, opacity
 
 */
 
@@ -46,9 +46,10 @@
 .font-opensans      { font-family: 'Open Sans', sans-serif; }
 .font-roboto        { font-family: 'Roboto', sans-serif;    }
 
+
 /* font style */
 
-.font-style-normal    { font-style: normal;   }
+.font-style-normal  { font-style: normal;   }
 
 
 /* font variant: normal, small-cap, default */
@@ -104,35 +105,35 @@
                min-height:    400px;
 }
 
-/* image filtering */
+/* image filtering (CSS3) */
 
 
-.filter-image-opacity-half {
+.filterimage-opacity-half {
   -webkit-filter: opacity(.5);
           filter: opacity(.5);
 }
 
-.filter-image-opacity-none {
+.filterimage-opacity-none {
   -webkit-filter: opacity(0);
           filter: opacity(0);
 }
 
-.filter-image-grayscale { 
+.filterimage-grayscale { 
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
 
-.filter-image-sepia {
+.filterimage-sepia {
   -webkit-filter: sepia(1);
           filter: sepia(1);
 }
 
-.filter-image-brighten {
+.filterimage-brighten {
   background: #ffffff;
   opacity: .75;
 }
 
-.filter-image-negative {
+.filterimage-negative {
   -webkit-filter: invert(1);
          -filter: invert(1);
 }
@@ -150,31 +151,31 @@
 
 */
 
-.image-fit_stretches  { 
+.imagefit_stretches  { 
   object-fit: fill;
     overflow: hidden;       
 }
-.image-fit_contained  { 
+.imagefit_contained  { 
   object-fit: contain;
     overflow: hidden;    
 }
-.image-fit_cover  { 
+.imagefit_cover  { 
   object-fit: cover;
     overflow: hidden;      
 }
-.image-fit_scaled { 
+.imagefit_scaled { 
   object-fit: scale-down;
     overflow: hidden; 
 }
-.image-fit_none { 
+.imagefit_none { 
   object-fit: none;
     overflow: hidden;       
 }
-.image-fit_unset  { 
+.imagefit_unset  { 
   object-fit: unset;
     overflow: hidden;      
 }
-.image-fit_initial  { 
+.imagefit_initial  { 
   object-fit: initial;
     overflow: hidden;    
 }
@@ -226,34 +227,34 @@
 \*====================================*/
 
 
-.margin-topbottom {
+.margin-topbottom-15px {
   margin-top:      15px;
   margin-bottom:   15px;
 }
 
-.margin-leftright {
+.margin-leftright-15px {
   margin-right:    15px;
   margin-left:     15px;
 }
 
-.padding-topbottom {
+.padding-topbottom-15px {
   padding-top:     15px;
   padding-bottom:  15px;
 }
 
-.padding-leftright  {
+.padding-leftright-15px  {
   padding-left:    15px;
   padding-right:   15px;
 }
 
 /* Negative margin */
 
-.margin-minus-topbottom {
+.margin-minus-topbottom-15px {
   margin-top:     -15px;
   margin-bottom:  -15px;
 }
 
-.margin-minus-leftright {
+.margin-minus-leftright-15px {
   margin-left:    -15px;
   margin-right:   -15px;
 }
@@ -304,7 +305,7 @@
 /* Radius */
 
 .border-allrounded  { border-radius:  25px !important;  }
-.border-allsquared     { border-radius:  0    !important;  }
+.border-allsquared  { border-radius:  0    !important;  }
 
 /* border-box */
 
@@ -539,12 +540,12 @@
 
 /* blank space */
 
-.spaces {
+.space {
   height: 15px;
   width:  auto;
 }
 
-.spaces-large {
+.space-large {
   height: 60px;
   width: auto;
 }
@@ -564,7 +565,7 @@
 
 
 /*====================================*\
-    #HTML ELEMENTS  @html-elements
+    #OTHER UTILITIES  @other-utilities
 \*====================================*/
 
 
