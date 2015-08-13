@@ -1,0 +1,23 @@
+{
+  "name": "literallycss",
+  "version": "0.1.2",
+  "homepage": "https://github.com/sancowinx/sancocss-utils",
+  "authors": [
+    "sancowinx <jmsarn@gmail.com>"
+  ],
+  "keywords": [
+    "css"
+  ],
+  "private":true,
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "showdown": "1.2.2"
+  }
+}
