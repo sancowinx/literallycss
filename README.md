@@ -25,7 +25,7 @@ For Example:
 
 
 
-Compartible with Bootstrap latest version. Latest webkit browser: Chrome, Firefox, Safari.(And possibly, Microsoft Edge)
+Compartible with Bootstrap latest version. Latest current browser: Chrome, Firefox, Safari. (And possibly, Microsoft Edge)
     
 For a naming of all css classes, syntax and format was pretty much inspired by Harry Roberts' http://cssguidelin.es/.
 
@@ -37,6 +37,7 @@ Credits to these following awesome guides:
 # Some possible issue
 * I haven't test with the non-latin language (Like Chinese Mandarin, Japanese Katakana/Hiragana/Kanji).
 * No support for older IE version  
+* Haven't test with Microsoft Edge yet.
 
 
 ---
