@@ -1,5 +1,5 @@
 # literallycss
-A collection of css helpers class for anyone does not (or too lazy) like to create a lot of repeating a same css property and values. Just include the a css helper in a class name and it will implement styling as a css rules does, literally. 
+A collection of css helpers class for anyone who does not like (or too lazy) to create a lot of repeating a same css property and values. Just include the a css helper in a class name and it will implement styling as a css rules does, literally. 
     
 # Why I make this
 **tl;dr** I'm lazy at creating a lot of css rules. So I created this. :trollface:  
@@ -11,17 +11,21 @@ For example, you want a image full width of the container (suppose the `<img>` i
       
     <img class="width-fitcontent" src"..." alt="..." /> 
 
-  Will make this `<img>` extend to fit the wrapper
+  Will make this `<img>` extend to fit the wrapper  
+
+  Another Example, you want an element to float at the left side of the container:  
+
+    <div class="float-left">(put your stuffs here)</div>
 
 You might use it with jQuery `.addClass()` with some event or callback 
 For Example:
 
-     
+
      $("#someid").addClass("display-nothing");
 
 
 
-Compartible with Bootstrap latest version.
+Compartible with Bootstrap latest version. Latest webkit browser: Chrome, Firefox, Safari.(And possibly, Microsoft Edge)
     
 For a naming of all css classes, syntax and format was pretty much inspired by Harry Roberts' http://cssguidelin.es/.
 
@@ -32,6 +36,7 @@ Credits to these following awesome guides:
 
 # Some possible issue
 * I haven't test with the non-latin language (Like Chinese Mandarin, Japanese Katakana/Hiragana/Kanji).
+* No support for older IE version  
 
 
 ---
@@ -50,7 +55,7 @@ There are nine section of css helpers:
  * TEXT ALIGNMENT & MANIPULATION -  Text alignment: left, right, center, justify, inherit;
                                     also manipulation like no selection
  * DISPLAY HELPERS -                Including display type, visibility, and overflow
- * HTML ELEMENTS -                  html, body, header, footer, section etc.
+ * OTHER UTILITIES -                Other utilities classes like no list bullet, opacity
 
 --- 
 ## GENERAL FONTS SETTINGS  
