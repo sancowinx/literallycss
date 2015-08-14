@@ -84,7 +84,7 @@
 
 .bg-bashgreenblack {
   background: #000000;
-       color: #00ff00 
+       color: #00ff00;
 }
 
 
@@ -151,33 +151,33 @@
 
 */
 
-.imagefit_stretches  { 
+.imagefit_stretches { 
   object-fit: fill;
-    overflow: hidden;       
+    overflow: hidden;
 }
-.imagefit_contained  { 
+.imagefit_contained {
   object-fit: contain;
-    overflow: hidden;    
+    overflow: hidden;
 }
-.imagefit_cover  { 
+.imagefit_cover {
   object-fit: cover;
-    overflow: hidden;      
+    overflow: hidden;
 }
-.imagefit_scaled { 
+.imagefit_scaled {
   object-fit: scale-down;
-    overflow: hidden; 
+    overflow: hidden;
 }
-.imagefit_none { 
+.imagefit_none {
   object-fit: none;
-    overflow: hidden;       
+    overflow: hidden;
 }
-.imagefit_unset  { 
+.imagefit_unset {
   object-fit: unset;
-    overflow: hidden;      
+    overflow: hidden;
 }
-.imagefit_initial  { 
+.imagefit_initial {
   object-fit: initial;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 
@@ -201,7 +201,8 @@
   -webkit-transition: 1s ease-in-out;
      -moz-transition: 1s ease-in-out;
       -ms-transition: 1s ease-in-out;
-       -o-transition: 1s ease-in-out;          
+       -o-transition: 1s ease-in-out;
+          transition: 1s ease-in-out;
 }
 
 .zoom-image-inside img:hover {
@@ -209,6 +210,7 @@
      -moz-transform: scale(1.2);
       -ms-transform: scale(1.2);
        -o-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 
@@ -438,24 +440,98 @@
 
 
 /* text highlights */
+/*  
+    Suppressing fallback warning
+    - not all browser support rgba
 
-.highlight-text-black         { background: rgba(0,0,0,1);         }
-.highlight-text-terminalgreen { background: rgba(0,255,0,1);       }
-.highlight-text-cyan          { background: rgba(0,255,255,0.8);   }
-.highlight-text-magneta       { background: rgba(255,0,255,0.8);   }
-.highlight-text-yellow        { background: rgba(255,255,0,0.8);   }
-.highlight-text-gray          { background: rgba(128,128,128,0.8); }
-.highlight-text-red           { background: rgba(255,0,0,0.8);     }
-.highlight-text-green         { background: rgba(0,128,0,0.8);     }
-.highlight-text-blue          { background: rgba(0,0,255,0.8);     }
-.highlight-text-pink          { background: rgba(255,192,203,0.8); }
-.highlight-text-orange        { background: rgba(255,165,0,0.8);   }
-.highlight-text-violet        { background: rgba(238,130,238,0.8); }
-.highlight-text-purple        { background: rgba(128,0,128,0.8);   }
-.highlight-text-gold          { background: rgba(255,215,0,0.8);   }
-.highlight-text-brown         { background: rgba(165,42,42,0.8);   }
-.highlight-text-khaki         { background: rgba(240,230,140,0.8); }
-.highlight-text-yellowgreen   { background: rgba(154,205,50,0.8);  }
+    https://css-tricks.com/rgba-browser-support/
+*/
+
+.highlight-text-black {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,1);
+}
+
+.highlight-text-terminalgreen {
+  background: rgb(0,255,0);
+  background: rgba(0,255,0,1);
+}
+
+.highlight-text-cyan {
+  background: rgb(0,255,255);
+  background: rgba(0,255,255,0.8);
+}
+
+.highlight-text-magneta {
+  background: rgb(255,0,255);
+  background: rgba(255,0,255,0.8);
+}
+
+.highlight-text-yellow {
+  background: rgb(255,255,0);
+  background: rgba(255,255,0,0.8);
+}
+
+.highlight-text-gray {
+  background: rgb(128,128,128);
+  background: rgba(128,128,128,0.8);
+}
+
+.highlight-text-red {
+  background: rgb(255,0,0);
+  background: rgba(255,0,0,0.8);
+}
+
+.highlight-text-green {
+  background: rgb(0,128,0);
+  background: rgba(0,128,0,0.8);
+}
+
+.highlight-text-blue {
+  background: rgb(0,0,255);
+  background: rgba(0,0,255,0.8);
+}
+
+.highlight-text-pink {
+  background: rgb(255,192,203);
+  background: rgba(255,192,203,0.8);
+}
+
+.highlight-text-orange {
+  background: rgb(255,165,0);
+  background: rgba(255,165,0,0.8);
+}
+
+.highlight-text-violet {
+  background: rgb(238,130,238);
+  background: rgba(238,130,238,0.8);
+}
+
+.highlight-text-purple {
+  background: rgb(128,0,128);
+  background: rgba(128,0,128,0.8);
+}
+
+.highlight-text-gold {
+  background: rgb(255,215,0);
+  background: rgba(255,215,0,0.8);
+}
+
+.highlight-text-brown {
+  background: rgb(165,42,42);
+  background: rgba(165,42,42,0.8);
+}
+
+.highlight-text-khaki {
+  background: rgb(240,230,140);
+  background: rgba(240,230,140,0.8);
+}
+
+.highlight-text-yellowgreen {
+  background: rgb(154,205,50);
+  background: rgba(154,205,50,0.8);
+}
+
 
 
 /* spoiler */
