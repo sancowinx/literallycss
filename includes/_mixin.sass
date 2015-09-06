@@ -1,0 +1,40 @@
+//margin mixin
+
+//=margin($size, $position)
+//requires positioning (e.g. top, bottom), size and units are optional
+
+=margin($position, $size: 0, $unit: px)
+  @if $position != all 
+    @debug "args: margin size => #{$size}; margin-position => #{$position}"
+    .margin-#{$position}-#{$size+$unit}
+      margin-#{$position}: $size+$unit !important
+  
+  @else if
+    @debug "args: margin size => #{$size}"
+    .margin-all-#{$size}
+      margin: $size+$unit !important
+
+@for $mgn from 1 through 20
+  $mgn: $mgn * 5 
+  +margin(top,$mgn)
+  +margin(right,$mgn)
+  +margin(bottom,$mgn)
+  +margin(left,$mgn)
+
+=padding($position, $size: 0, $unit: px)
+  @if $position != all 
+    @debug "args: padding size => #{$size}; padding-position => #{$position}"
+    .padding-#{$position}-#{$size+$unit}
+      padding-#{$position}: $size+$unit !important
+  
+  @else if
+    @debug "args: padding size => #{$size};"
+    .padding-all-#{$size}
+      padding: $size+$unit !important
+
+@for $mgn from 1 through 20
+  $mgn: $mgn * 5 
+  +padding(top,$mgn)
+  +padding(right,$mgn)
+  +padding(bottom,$mgn)
+  +padding(left,$mgn)
