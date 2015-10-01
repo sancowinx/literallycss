@@ -1,0 +1,17 @@
+=margin($position, $size: 0, $unit: px)
+  @if $position != all 
+    // @debug "args: margin size => #{$size}; margin-position => #{$position}"
+    .mg-#{$position}-#{$size+$unit}
+      margin-#{$position}: $size+$unit !important
+  @else
+    // @debug "args: margin size => #{$size}"
+    .mg-all-#{$size+$unit}
+      margin: $size+$unit !important
+
+@for $mgn from 1 through 20
+  $mgn: $mgn * 5 
+  +margin(top,$mgn)
+  +margin(right,$mgn)
+  +margin(bottom,$mgn)
+  +margin(left,$mgn)
+  +margin(all,$mgn)

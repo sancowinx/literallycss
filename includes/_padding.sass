@@ -1,0 +1,17 @@
+=padding($position, $size: 0, $unit: px)
+  @if $position != all 
+    // @debug "args: padding size => #{$size}; padding-position => #{$position}"
+    .pd-#{$position}-#{$size+$unit}
+      padding-#{$position}: $size+$unit !important
+  @else
+    // @debug "args: padding size => #{$size};"
+    .pd-all-#{$size}
+      padding: $size+$unit !important
+
+@for $mgn from 1 through 20
+  $mgn: $mgn * 5 
+  +padding(top,$mgn)
+  +padding(right,$mgn)
+  +padding(bottom,$mgn)
+  +padding(left,$mgn)
+  +padding(all,$mgn)
