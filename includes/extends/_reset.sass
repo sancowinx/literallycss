@@ -1,0 +1,20 @@
+%margin-reset
+  margin: 0   !important
+
+%padding-reset
+  padding: 0  !important
+
+%border-reset
+  +border(0)
+  +border-radius(0)
+  // derp: this includes after mixin
+
+%input-remove-outline-highlight
+  outline: none
+
+%disable-text-selection
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  -o-user-select: none
+  user-select: none
