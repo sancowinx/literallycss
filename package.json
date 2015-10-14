@@ -18,7 +18,8 @@
   "homepage": "https://github.com/sancowinx/sancocss-utils#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-csslint": "^0.4.0",
     "grunt-contrib-cssmin": "^0.12.3",
-    "grunt-contrib-csslint": "^0.4.0"
+    "grunt-sass": "^1.0.0"
   }
 }
